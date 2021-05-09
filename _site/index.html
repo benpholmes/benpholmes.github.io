@@ -3,6 +3,10 @@
     <head>
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
@@ -10,13 +14,25 @@
   <body>
     <header class="header">
   <nav>
-  <ul class="header-nav nav-links">
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
+    <ul class="header-nav nav-links">
     <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2020/05/05/title-of-post.html">All going to shit</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">Moby Dick</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2020/05/05/title-of-post.html">Newest Post</a></li>
 
-  </ul>
+    </ul>
   </nav>
   <a href="/" class="header-logo">
     <img src="/images/logo.png" alt="Learn Enough">
@@ -31,13 +47,19 @@
     <h1>Code Dangerously</h1>
     <ul class="hero-socials social-list">
       <li>
-  <a href="https://example.com/" class="social-link">Fb</a>
+  <a href="https://example.com/" class="social-link">
+    <i class="fab fa-facebook"></i>
+  </a>
 </li>
 <li>
-  <a href="https://example.com/" class="social-link">Tw</a>
+  <a href="https://example.com/" class="social-link">
+    <i class="fab fa-twitter"></i>
+  </a>
 </li>
 <li>
-  <a href="https://example.com/" class="social-link">Gh</a>
+  <a href="https://example.com/" class="social-link">
+    <i class="fab fa-github"></i>
+  </a>
 </li>
 
     </ul>
@@ -74,7 +96,7 @@
       </p>
     </div>
   </div>
-  
+
   <div class="home-section">
     <h4>Most recent post</h4>
     <div class="blog-posts">
@@ -116,7 +138,7 @@ the spleen and regulating the circulation.</p>
         <img src="https://placekitten.com/g/400/400">
         <h3>Michael Hartl</h3>
         <a href="https://twitter.com/mhartl" class="social-link">
-          Tw
+          <i class="fab fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -140,7 +162,7 @@ the spleen and regulating the circulation.</p>
         <img src="https://placekitten.com/g/400/400">
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link">
-          Tw
+          <i class="fab fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -155,7 +177,7 @@ the spleen and regulating the circulation.</p>
         <img src="https://placekitten.com/g/400/400">
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link">
-          Tw
+          <i class="fab fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -180,7 +202,17 @@ the spleen and regulating the circulation.</p>
   <ul class="footer-nav nav-links">
     <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2020/05/05/title-of-post.html">All going to shit</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">Moby Dick</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2020/05/05/title-of-post.html">Newest Post</a></li>
 
   </ul>
